@@ -18,8 +18,16 @@ header {
 
 /* Logotyp */
 .logotyp {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
     color: white;
     text-decoration: none;
+}
+
+.logotyp img {
+   width: 28px;
+   height: auto;
 }
 
 /* Hamburgermeny */
@@ -38,7 +46,7 @@ header {
     background-color: transparent;
     border: none;
     color: white;
-    font-size: 28px;
+    font-size: 25px;
 }
 
 .menu ul {
