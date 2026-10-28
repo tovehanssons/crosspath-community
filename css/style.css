@@ -1,0 +1,71 @@
+/* Grundläggande CS*/
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #312F2F;
+    padding: 20px;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+/* Logotyp */
+.logotyp {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hamburgermeny */
+.menu {
+    display: none;
+    width: 100%;
+}
+
+/*Visar menyn när klassen open läggs till*/
+.menu.open {
+    display: block;
+}
+
+.menu-toggle{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 28px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Desktop-versionen, för stora skärmar */
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        width: auto;
+    }
+
+    .menu ul {
+        display: flex;
+        gap: 20px;
+    }
+}
