@@ -1,7 +1,13 @@
 
+"use strict";
+
+// Hämtar menyknappen och menyn. 
 const menuBtn = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".menu");
 
-menuBtn.addEventListener("click", function() {
+// Lägger till en event listener som gör att man kan klicka på menyknappen.
+menuBtn.addEventListener("click", function () {
+
+    // Gör så att menyn öppnas och stängs när man klickar på knappen.
     menu.classList.toggle("open");
 });

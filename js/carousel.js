@@ -1,5 +1,6 @@
-
 //Bildkarusell 
+
+"use strict";
 
 // Hämtar bildkarusellen i HTML-fliken
 document.querySelectorAll(".carousel").forEach((carousel) => {
