@@ -7,6 +7,7 @@
     <title>CrossPath</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
+    <script src="js/carousel.js" defer></script>
 </head>
 
 <body>
@@ -33,10 +34,24 @@
     </header>
     <main>
 
-        <!--Hero-sektionen med bild och text. (Ska bli en bildkaruseller med JS)-->
+        <!--Hero-sektionen med bild och text. Det var tidigare en hero-bild, men har lagt in en bildkarusell för hero-sektionen -->
 
         <section class="hero">
-            <img src="images/jonah-brown.jpg" alt="Tre killar som står bredvid varandra framför ett berg och ler.">
+            <div class="carousel">
+
+                <div class="carousel__item">
+                    <img src="images/jonah-brown.jpg" alt="Tre killar framför ett berg.">
+                </div>
+
+                <div class="carousel__item">
+                    <img src="images/logan-weaver.jpg" alt="Ett glatt skidgäng som åker på en transportsträcka">
+                </div>
+
+                <div class="carousel__item">
+                    <img src="images/woody-kelly.jpg"
+                        alt="Ett gäng människor som sitter framför ett berg och fikar tillsammans">
+                </div>
+            </div>
 
             <div class="hero-text">
                 <p class="hero-intro">ETT COMMUNITY FÖR AKTIVA MÄNNISKOR</p>
@@ -51,23 +66,23 @@
                 <div class="member-container">
                     <a href="community.html" class="member-btn">Bli medlem</a>
                 </div>
-               <div class="hero-info">
-    <p>
-        CrossPath är en mötesplats för vuxna kvinnor och män som delar ett intresse
-        för ett aktivt liv, äventyr och nya upplevelser. Här möts människor med
-        olika bakgrunder och erfarenheter, men med en gemensam vilja att upptäcka
-        nya platser, träffa nya människor och hitta på saker tillsammans.
-    </p>
+                <div class="hero-info">
+                    <p>
+                        CrossPath är en mötesplats för vuxna kvinnor och män som delar ett intresse
+                        för ett aktivt liv, äventyr och nya upplevelser. Här möts människor med
+                        olika bakgrunder och erfarenheter, men med en gemensam vilja att upptäcka
+                        nya platser, träffa nya människor och hitta på saker tillsammans.
+                    </p>
 
-    <p>
-        Du behöver inte vara en erfaren äventyrare för att vara en del av
-        gemenskapen. Det är en plats där nya vänskaper växer fram, äventyr tar
-        form och vi inspirerar varandra att våga prova nya saker. Oavsett om
-        du vill hitta nya vänner, få inspiration eller planera ditt nästa
-        äventyr är CrossPath platsen där våra vägar möts.
-    </p>
-</div>
-</div>
+                    <p>
+                        Du behöver inte vara en erfaren äventyrare för att vara en del av
+                        gemenskapen. Det är en plats där nya vänskaper växer fram, äventyr tar
+                        form och vi inspirerar varandra att våga prova nya saker. Oavsett om
+                        du vill hitta nya vänner, få inspiration eller planera ditt nästa
+                        äventyr är CrossPath platsen där våra vägar möts.
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -79,11 +94,11 @@
                 alt="CrossPaths logotyp. Den föreställer ett större och ett mindre berg. Logotypen är helt vit">
             CrossPath
         </a>
-<div class="footer-social">
-    <img src="images/instagram.svg" alt = "En symbol för Instagram">
-    <img src="images/facebook.svg" alt="En symbol för Facebook">
-    <img src="images/tiktok.svg" alt="En symbol för TikTok">
-</div>
+        <div class="footer-social">
+            <img src="images/instagram.svg" alt="En symbol för Instagram">
+            <img src="images/facebook.svg" alt="En symbol för Facebook">
+            <img src="images/tiktok.svg" alt="En symbol för TikTok">
+        </div>
         <nav>
             <ul>
 

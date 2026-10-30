@@ -28,7 +28,7 @@ header {
     gap: 0.5rem;
     color: white;
     text-decoration: none;
-    
+
 }
 
 .logotyp span {
@@ -71,10 +71,50 @@ header {
     text-decoration: none;
 }
 
-.hero img {
+/* Bildkarusell */
+
+.carousel {
+    position: relative;
     width: 100%;
     height: 272px;
+}
+
+.carousel__item {
+    height: 100%;
+    display: none;
+}
+
+.carousel__item--selected {
+    display: block;
+}
+
+.carousel__item img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+}
+
+.carousel__nav {
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.carousel__button {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: rgb(144, 140, 140);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel__button--selected {
+    background: black;
 }
 
 .hero-text {
@@ -122,7 +162,7 @@ header {
 }
 
 
-    footer {
+footer {
     background-color: #312F2F;
     color: white;
     padding: 20px;
@@ -225,25 +265,23 @@ footer nav a {
 
     }
 
-        .hero {
-            display: flex;
-        }
+    .hero {
+        display: flex;
+    }
 
-        .hero img {
-            width: 50%;
-            height: 750px;
-            object-fit: cover;
-            flex-shrink: 0;
-        }
-        
-     /* Events-fliken för Desktop */
+   .carousel {
+    width: 50%;
+    height: 750px;
+    flex-shrink: 0;
+
+   }
+
+    /* Events-fliken för Desktop */
 
     .events-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
     }
-   
-    }
 
-
+}
