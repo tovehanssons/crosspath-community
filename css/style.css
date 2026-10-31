@@ -9,6 +9,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Placerar logotypen och menyn högst upp på sidan */
 header {
     background-color: #312F2F;
     padding: 20px;
@@ -21,7 +22,7 @@ header {
 
 }
 
-/* Logotyp */
+/* Placerar logotypens bild och text bredvid varandra */
 .logotyp {
     display: flex;
     align-items: center;
@@ -31,17 +32,19 @@ header {
 
 }
 
+/* Flyttar ner texten så den hamnar bredvid loggan*/
 .logotyp span {
     position: relative;
     top: 6px;
 }
 
+/*Bestämmer storleken på loggans bild*/
 .logotyp img {
     width: 28px;
     height: auto;
 }
 
-/* Hamburgermeny */
+/* Hamburgermenyn. Menyn är dold tills man klickar på den */
 .menu {
     display: none;
     width: 100%;
@@ -52,6 +55,7 @@ header {
     display: block;
 }
 
+/* Menyknappens utseende*/
 .menu-toggle {
     cursor: pointer;
     background-color: transparent;
@@ -60,12 +64,14 @@ header {
     font-size: 25px;
 }
 
+/*Tar bort punkter och mellanrum från menylistan*/
 .menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
+/*Gör menylänkarna vita och tar bort understrykningen*/
 .menu a {
     color: white;
     text-decoration: none;
@@ -73,17 +79,20 @@ header {
 
 /* Bildkarusell */
 
+/* Storlek och gör det möjligt att placera text ovanpå bilderna*/
 .carousel {
     position: relative;
     width: 100%;
     height: 272px;
 }
 
+/*Döljer de bilderna i karusellen tills de ska visas*/
 .carousel__item {
     height: 100%;
     display: none;
 }
 
+/*Fotografens namn hamnar uppe på högra sidan på bilden*/
 .image-credit {
     position: absolute;
     top: 10px;
@@ -94,16 +103,19 @@ header {
     padding: 5px;
 }
 
+/*Visar bilden som är vald i bildkarusellen*/
 .carousel__item--selected {
     display: block;
 }
 
+/*Gör så att bilderna fyller upp hela bildkarusellen utan att bli skeva/utdragna*/
 .carousel__item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/*Navigeringsprickarna hamnar längst ner i bildkarusellen*/
 .carousel__nav {
     width: 100%;
     padding: 20px 0;
@@ -113,6 +125,7 @@ header {
     text-align: center;
 }
 
+/*Knapparna blir små runda prickar*/
 .carousel__button {
     width: 10px;
     height: 10px;
@@ -123,36 +136,38 @@ header {
     cursor: pointer;
 }
 
+/*Den valda pricken blir svart*/
 .carousel__button--selected {
     background: black;
 }
 
+/* Mellanrum runt texten på startsidan*/
 .hero-text {
     padding: 1rem;
 }
 
+/*Mellanrum under huvudrubriken*/
 .hero-text h1 {
     font-weight: normal;
     line-height: 58px;
     margin-bottom: 40px;
 }
 
+/* Få mer radavstånd och mellarum under den första texten*/
 .hero-description {
     line-height: 28px;
     margin-bottom: 30px;
 }
 
+/*Textstorlek, mellanrum för informationtexterna */
 .hero-info p {
+    font-size: 16px;
     line-height: 28px;
+    margin-top: 0;
     margin-bottom: 30px;
 }
 
-.hero-info p {
-    font-size: 16px;
-    margin-top: 0;
-}
-
-
+/* Placerar innehållet i footern under varandra och sätter dessa i mitten */
 footer {
     background-color: #312F2F;
     color: white;
@@ -165,6 +180,7 @@ footer {
 
 }
 
+/*Footerns logotyp och texten "CrossPath" hamnar bredvid varandra och mer på samma våglängd */
 .footer-logo {
     display: flex;
     align-items: flex-end;
@@ -174,21 +190,25 @@ footer {
     line-height: 1;
 }
 
+/*Storleken på loggans bild i footern*/
 .footer-logo img {
     width: 28px;
     height: auto;
 }
 
+/*Placerar symbolerna för sociala medier bredvid varandra*/
 .footer-social {
     display: flex;
     gap: 1rem;
 }
 
+/*Storleken för sociala medier-symbolerna*/
 .footer-social img {
     width: 24px;
     height: 24px;
 }
 
+/*Placerar navigeringslänkarna bredvid varandra. */
 footer nav ul {
     list-style: none;
     margin: 0;
@@ -199,19 +219,19 @@ footer nav ul {
     gap: 1rem;
     font-size: 12px;
 }
-
+/* Länkarna i footern blir vita och tar bort understrecken*/
 footer nav a {
     color: white;
     text-decoration: none;
 }
 
-/* Företagets adress */
+/* Företagets adress. Utan kursivstil */
 footer address {
     font-style: normal;
     font-size: 12px;
 }
 
-/* Copyrighttext */
+/* Copyrighttextens storlek */
 footer p {
     font-size: 12px;
     margin: 0;
@@ -219,16 +239,19 @@ footer p {
 
 /* Events-fliken för Mobile First */
 
+/*Skapar luft för kanter och innehållet*/
 .events {
     padding: 1rem;
 }
 
+/* Eventkorten hamnar under varandra och mer avstånd från varandra*/
 .events-grid {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
+/* Eventkorten får en kantlinje och mer mellanrum nedanför */
 .event-card {
     margin-bottom: 2rem;
     border: 1px solid #e0e0e0;
@@ -236,6 +259,7 @@ footer p {
 
 }
 
+/*Text uppe till höger, så jag kan placera fotografens namn ovanpå eventbilden */
 .event-image-credit {
     position: absolute;
     top: 10px;
@@ -248,17 +272,20 @@ footer p {
     border-radius: 4px;
 }
 
+/*Gör så att eventbilderna fyller kortet */
 .event-card img {
     width: 100%;
     height: 550px;
     object-fit: cover;
 }
 
+/*Mellanrum på båda sidorna om texterna i eventkorten*/
 .event-card h2 {
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
+/*Skapar mellanrum på båda sidor om texterna i eventkorten */
 .event-card p {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -267,26 +294,31 @@ footer p {
 
 /* Kontaktformulär */
 
+/*Storleken på bredd och placerar det i mitten av sidan*/
 .contact {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
 }
 
+/*Fixar mer mellanrum under rubriken på kontaktformuläret*/
 .contact h1 {
     margin-bottom: 15px;
 }
 
+/*Skapar mellanrum under texten på kontaktsidan */
 .contact p {
     margin-bottom: 20px;
 }
 
+/*Placerar fälten ovanför. Texten är i fetstil */
 .contact label {
     display: block;
     margin-bottom: 6px;
     font-weight: bold;
 }
 
+/*Utseende för namn och e-post*/
 .contact input {
 
      width: 100%;
@@ -298,8 +330,10 @@ footer p {
 
 }
 
+/*Storlek och utseende på meddelande-rutan*/
 .contact textarea {
     width: 100%;
+    height: 250px;
     padding: 10px;
     margin-bottom: 15px;
     font: inherit;
@@ -307,10 +341,7 @@ footer p {
     border-radius: 4px;
 }
 
-.contact textarea {
-    height: 250px;
-}
-
+/*Felmeddelanden blir röda Gör lite mellanrum*/
 .contact .error {
     color: #b00020;
     font-size: 14px;
@@ -318,6 +349,7 @@ footer p {
     padding-left: 20px;
 }
 
+/*Utseende på knapparna*/
 .contact button {
     padding: 10px 18px;
     margin-right: 10px;
@@ -330,6 +362,7 @@ footer p {
     cursor: pointer;
 }
 
+/*Rensa-knappen får en ljus bakgrund och gråmörk text*/
 #clear-btn {
     background-color: #e5e5e5;
     color: #222;
@@ -338,12 +371,14 @@ footer p {
 
 /* Community-sidan */
 
+/*Bakgrundsfärg, textfärg och luftigare*/
 .community {
     background-color: white;
     color: black;
     padding: 40px 20px;
 }
 
+/*Storlek, radavstånd, mellanrum för huvudrubriken*/
 .community h1 {
     font-size: 2.5rem;
     font-weight: normal;
@@ -352,14 +387,14 @@ footer p {
     margin-bottom: 40px;
 }
 
+/*Textstorlek, mellanrum för texterna på Community */
 .community p {
     font-size: 1.1rem;
     line-height: 28px;
     margin-bottom: 30px;
 }
 
-/* Facebook-knapp */
-
+/* Facebook-knappen har mörk bakgrund och runda hörn */
 .facebook-btn {
     display: inline-block;
     padding: 15px 30px;
@@ -371,40 +406,41 @@ footer p {
 }
 
 
-/* Desktop-versionen, för stora skärmar */
+/* Anpassar webbplatsen för stora skärmar */
 
 @media (min-width: 768px) {
+    /*Döljer knappen för hamburgermenyn*/
     .menu-toggle {
         display: none;
     }
-
+/*Navigeringsmenyn på större skärmar*/
     .menu {
         display: block;
         width: auto;
     }
-
+/*Menylänkarna hamnar brevid varandra*/
     .menu ul {
         display: flex;
         gap: 20px;
 
     }
-
+/* Placerar bildkarusellen och texten bredvid varandra*/
     .hero {
         display: flex;
     }
-
+/*Texten blir större*/
      .hero-text h1 {
         font-size: 48px;
     }
-
+/*Infotexterna blir större*/
     .hero-description {
         font-size: 22px;
     }
-
+/*Infotexterna blir större*/
     .hero-info p {
         font-size: 18px;
     }
-
+/*Bildkarusellen blir större och låter den ta upp 50% av bredden*/
    .carousel {
     width: 50%;
     height: 750px;
@@ -414,6 +450,7 @@ footer p {
 
     /* Events-fliken för Desktop */
 
+    /*Eventskorten placeras bredvid varandra*/
     .events-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -422,14 +459,17 @@ footer p {
 
 /* Community-fliken */
 
+/*Community-sidan får mer mellanrum mot kanterna*/
     .community {
         padding: 80px 60px;
     }
 
+    /*Huvudrubriken blir större*/
     .community h1 {
         font-size: 4rem;
     }
 
+    /*Gör texterna större*/
     .community p {
         font-size: 1.5rem;
     }

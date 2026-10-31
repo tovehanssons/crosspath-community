@@ -1,7 +1,7 @@
 
 "use strict";
 
-// Hämtar menyknappen och menyn. 
+// Hämtar menyknappen och hamburgermenyn. 
 const menuBtn = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".menu");
 

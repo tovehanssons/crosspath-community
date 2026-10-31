@@ -57,7 +57,7 @@ function validateForm(name, email, message) {
         validate = false;
     }
 
-    // Validera meddelande-input
+    // Kontrollera att användaren har skrivit ett meddelande
     if (message.length === 0) {
         errorList.push("Skriv ett meddelande");
         validate = false;
