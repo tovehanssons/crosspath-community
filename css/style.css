@@ -378,8 +378,6 @@ footer nav a {
 
 /* Community-fliken */
 
-@media (min-width: 768px) {
-
     .community {
         padding: 80px 60px;
     }
@@ -391,7 +389,4 @@ footer nav a {
     .community p {
         font-size: 1.5rem;
     }
-}
-
-
 }
