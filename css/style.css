@@ -135,21 +135,6 @@ header {
     max-width: 100%;
 }
 
-/* Bli medlem-knappen */
-
-.member-container {
-    text-align: center;
-}
-
-.member-btn {
-    display: inline-block;
-    background-color: #312F2F;
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 2rem;
-    margin-top: 1rem;
-    border-radius: 5px;
-}
 
 .hero-info {
     margin-top: 2rem;
@@ -281,7 +266,6 @@ footer nav a {
 
 }
 
-
 .contact textarea {
     width: 100%;
     padding: 10px;
@@ -317,6 +301,41 @@ footer nav a {
 #clear-btn {
     background-color: #e5e5e5;
     color: #222;
+}
+
+
+/* Community-sidan */
+
+.community {
+    background-color: white;
+    color: black;
+    padding: 40px 20px;
+}
+
+.community h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height:  48px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.community p {
+    font-size: 1.1rem;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+/* Facebook-knapp */
+
+.facebook-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 40px;
+    background-color: #312F2F;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 
@@ -356,5 +375,23 @@ footer nav a {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
     }
+
+/* Community-fliken */
+
+@media (min-width: 768px) {
+
+    .community {
+        padding: 80px 60px;
+    }
+
+    .community h1 {
+        font-size: 4rem;
+    }
+
+    .community p {
+        font-size: 1.5rem;
+    }
+}
+
 
 }
