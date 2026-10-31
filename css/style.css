@@ -247,6 +247,79 @@ footer nav a {
     margin-right: 1rem;
 }
 
+
+/* Kontaktformulär */
+
+.contact {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.contact h1 {
+    margin-bottom: 15px;
+}
+
+.contact p {
+    margin-bottom: 20px;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.contact input {
+
+     width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font: inherit;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+
+}
+
+
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font: inherit;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.contact textarea {
+    height: 250px;
+}
+
+.contact .error {
+    color: #b00020;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.contact button {
+    padding: 10px 18px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font: inherit;
+    border: none;
+    border-radius: 4px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}
+
+#clear-btn {
+    background-color: #e5e5e5;
+    color: #222;
+}
+
+
 /* Desktop-versionen, för stora skärmar */
 
 @media (min-width: 768px) {

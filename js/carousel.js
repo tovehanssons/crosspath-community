@@ -2,7 +2,7 @@
 
 "use strict";
 
-// Hämtar bildkarusellen i HTML-fliken
+// Hämtar element i DOM
 document.querySelectorAll(".carousel").forEach((carousel) => {
 
   // Hämtar alla bilder för karusellen
@@ -46,7 +46,7 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
     });
   });
 
-  // Visar första bilden och markerar första pricken när sidan laddas
+  // Visar första bilden och markerar första pricken
   items[0].classList.add("carousel__item--selected");
   buttons[0].classList.add("carousel__button--selected");
 });
